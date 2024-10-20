@@ -25,7 +25,7 @@ jobs:
               run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","apitoken":"$CLOUDFLARE_API_TOKEN"}}' > ./creds.json
 
             - name: Publish
-              uses: is-not-a-pro/dnscontrol-action@main
+              uses: is-cool-me/dnscontrol-action@v4.11.0
               env:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
               with:
