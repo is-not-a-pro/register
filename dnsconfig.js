@@ -133,4 +133,4 @@ commit.push(IGNORE("test"));
 commit.push(IGNORE("**.test"));
 
 // Commit all DNS records
-D("is-a.dev", NewRegistrar("none"), DnsProvider(NewDnsProvider("cloudflare", { "manage_single_redirects": true })), commit);
+D("is-not-a.pro", NewRegistrar("none"), DnsProvider(NewDnsProvider("cloudflare", { "manage_single_redirects": true })), commit);
